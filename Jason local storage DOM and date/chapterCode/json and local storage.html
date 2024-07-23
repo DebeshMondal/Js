@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json</title>
+  </head>
+  <body>
+    <script>
+    //   let product = {
+    //     name: "Mobile",
+    //     price: 20000,
+    //      rating: {
+    //       stars: 4.5,
+    //       users: 5000,
+    //     },
+    //   };
+    //   console.log(typeof product);
+    //   console.log(product);
+
+      //OBJECT TO STRING CONVERSION
+    //   let str = JSON.stringify(product);
+    //   console.log(typeof str);
+    //   console.log(str);
+
+      //STRING TO OBJECT CONVERSION
+    //   let obj = JSON.parse(str);
+    //   console.log(typeof obj);
+    //   console.log(obj);
+
+
+
+    //STORAGE.....
+
+    let product = {
+        name: "Mobile",
+        price: 20000,
+        rating: {
+          stars: 4.5,
+          users: 5000,
+        },
+        }
+    //   console.log(typeof product);
+    //   console.log(product);
+
+// localStorage.setItem('Name', 'Debesh');
+// localStorage.setItem('Roll', '24');
+// console.log(localStorage.getItem('Name'));
+
+// localStorage.setItem('product',JSON.stringify(product))
+// console.log(localStorage.getItem('product'));
+// let p2 = JSON.parse(localStorage.getItem('product'));
+// console.log(p2);
+// localStorage.removeItem('Roll')
+localStorage.clear();
+
+
+    </script>
+  </body>
+</html>
