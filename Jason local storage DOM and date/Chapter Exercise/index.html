@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #button{
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        .js-odd {
+            background-color: aqua;
+        }
+        .js-even {
+            background-color: chartreuse;
+        }
+    </style>
+  </head>
+  <body>
+    <h3 id="greeting"></h3>
+
+Q2..  CREATE BUTTON WHICH SHOWS THE NO. OF TIMES IT HAS BEEN PRESSED,, ALSO ADD DIFF COLOR FOR WHEN IT HAS BEEN PRESSED ODD OR EVEN TIMES AND THE CLICK FUNCTION SHOULD ALSO SURVIVE BROWSER REFRESH
+ <br><br><br>
+<button id="button" onclick="buttonPressed();"></button>
+    
+
+    <script>
+
+// Q2..
+let clicked = localStorage.getItem('clicked')|| 0 ;
+function buttonPressed(){
+    // console.log('pressed');
+     
+    clicked++;
+    localStorage.setItem('clicked',clicked)
+    updateButton()
+}
+
+function updateButton(){
+    let button = document.querySelector('#button');
+    
+    if(clicked % 2 === 0 ){
+        button.classList.remove('js-odd');
+        button.classList.add('js-even');
+    }
+    else{
+        button.classList.remove('js-even');
+        button.classList.add('js-odd');
+    }
+   
+    button.innerText = clicked;
+}
+updateButton();
+
+
+
+
+
+
+
+
+
+      // Q1. DISPLAY GOOD MORNING AFTERNOON AND NIGHT BASED ON CURRENT HOUR AND ADD NAME TO THE OUTPUT
+
+      function doGreetings(name) {
+        let date = new Date();
+        let hours = date.getHours()
+        // let hours = 14;
+        let heading = document.querySelector("#greeting");
+        console.log(hours);
+        if (hours > 5 && hours < 12) {
+          heading.innerText = "Good morning, " + name;
+        } else if (hours > 12 && hours < 18) {
+          heading.innerText = "Good afternoon, " + name;
+        } else {
+          heading.innerText = "Good night, " + name;
+        }
+      }
+      doGreetings("John");
+    </script>
+  </body>
+</html>
