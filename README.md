@@ -1,5 +1,5 @@
 # Js
- Java Script learning with KJ Sir
+ Java Script learning with KG Sir
 
 
  
