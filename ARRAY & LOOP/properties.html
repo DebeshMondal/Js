@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Properties</title>
+  </head>
+  <body>
+    <script>
+      console.log("CHECKS ARRAY OR NOT");
+      let arr = (1, 4, 44, 445, 444, 55);
+      console.log(arr);
+      console.log(Array.isArray(arr)); //CHECKS ARRAY OR NOT
+
+      let arr1 = [34, 56, 67];
+      console.log(arr1);
+      console.log(Array.isArray(arr1));
+
+      console.log("LENGTH");
+      console.log(arr1.length); //LENGTH PROPERTY
+
+      console.log("POP AND PUSH");
+      //  POP PUSH IN ARRAY
+      arr1.push(69);
+      console.log(arr1);
+      arr1.pop();
+      console.log(arr1);
+      console.log("Popped " + arr1.pop());
+      console.log(arr1);
+
+      // POP PUSH OCCURS IN REAR SIDE SIMILARLY SHIFT UNSHIFT OCCURS IN FRONT SIDE...
+
+      console.log("SLICE");
+      let arr3 = [3, 6, 7, 8, 9, 4];
+      console.log(arr3);
+      arr3.splice(1, 2); //DELETE BTW ARRAY
+      console.log(arr3);
+    </script>
+  </body>
+</html>
