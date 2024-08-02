@@ -48,7 +48,21 @@
         console.log("Valueof");
         console.log(arr5.valueOf());
 
+        console.log("Reference");
+        let arr7 = [3 , 4 ,45, 67 ]
+        console.log("Array 7 = "+arr7);
+        
+        let arr6 = arr7;
+        console.log(arr6);
+        console.log("Array 7 er 3rd element change");
+        arr6[2] = 20 ;
+        console.log(arr6);
 
+        console.log("Destructuring Also Works for Array");
+        let [a,b,c,d]= arr7;
+        console.log(a + " " + b + " " + c + " "+d);
+        
+        
 
 
     </script>
