@@ -90,6 +90,45 @@ while (true) {
     n++;
 }
 
+
+console.log("10 to 1 using for");
+for (let r=10;r>=1;r--){
+    console.log(r);
+}
+
+
+console.log("USING CONTINUE ONLY PRINT +VE NO. FROM GIVEN ARR");
+let posi = [1,2,-3,4,-5,6,-7,8,-9,10];
+for (let xy=0; xy<posi.length; xy++){
+    if (posi[xy]<0) continue;
+    console.log(posi[xy]);
+}
+
+
+console.log("Using Accumulator concatenate the strings");
+
+// string1="KG"
+// string2="Coding"
+// string3="JS"
+// string4="Course"
+// string5="is"
+// string6="Best"
+
+// console.log(string1 + " " + string2 + " " + string3 + " " +  string4 + " " + string5 + " " + string6);
+
+let strings = ["KG", "Coding", "JS", "Course", "is", "Best"];
+// let accumulator = "";
+// for (let s = 0; s<strings.length; s++){
+//     accumulator += strings[s] + " ";
+// }
+// console.log(accumulator);
+
+console.log(strings.join(" "));
+
+
+
+
+
         
         
         
