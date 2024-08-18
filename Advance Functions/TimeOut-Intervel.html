@@ -12,8 +12,29 @@
 
     <script>
     
-
+    console.log("Set timeout");
     
+        setTimeout(function(){
+            console.log("Evening")
+        }
+        , 2000);
+
+        let alrm =()=> 
+            console.log("Good Morning")
+        
+        let timerId = setTimeout(alrm, 4000);
+        console.log("So this line prints before good morning and evening due to timeout function");
+        console.log(`Alarm set with timerId:${timerId}`);
+        clearTimeout(timerId)
+
+        console.log("Set Interval");
+        let alarm = ()=> console.log(`WAKE UP!! ${new Date()}`);
+         
+       let intervalId = setInterval(alarm,1000);
+       setTimeout (()=> clearInterval(intervalId),5000)
+     
+
+
     </script>
 </body>
 </html>
