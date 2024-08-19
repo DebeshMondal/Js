@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button class="btn">Click Me!!</button>
+
+
+<script>
+  let Button = document.querySelector(".btn");
+  let behaviour = event => console.log("Why u clicked me??!!");
+  
+  Button.addEventListener("click",behaviour)
+
+  let pdate = event => console.log(new Date());
+  Button.addEventListener("click",pdate)
+
+  Button.removeEventListener('click',behaviour)
+    
+
+</script>
+</body>
+</html>
