@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-    <h1>
-        Open terminal!!
-    </h1>
+  </head>
+  <body>
+    <h1>Open terminal!!</h1>
 
     <script>
-console.log("For Each Loop");
+      console.log("For Loop");
 
-    
+      let arr = [2, 5, 7, 8];
+      for (let index = 0; index < arr.length; index++) {
+        console.log(arr[index]);
+      }
+
+      console.log("FOREACH LOOP");
+      arr.forEach((num) => console.log(num));
+
+      console.log("Search Element");
+      let arrr = [3, 5, 7, 8, 96, 69];
+      arrr.forEach((num) => {
+        if (num === 7) {
+          return;
+        }
+        console.log(`Visited: ${num}`);
+      });
+
+      function search(arrr, num) {
+        for (let i = 0; i < arrr.length; i++) {
+          if (arrr[i] === num) {
+            console.log(`Element found at: ${i}`);
+            return;
+          }
+        }
+        console.log("Element not found!");
+      }
+      search(arrr, 69);
     </script>
-</body>
+  </body>
 </html>
