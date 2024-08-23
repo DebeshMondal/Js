@@ -4,20 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .btn {
+            background-color: rgb(73, 100, 216);
+            height: 50px;
+            width: 280px;
+            font-size: 15px;
+            color: white;
+            padding: 10px 20px;
+            border: 6px solid black;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .js-size {
+            height: 100px;
+            width: 400px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>OPEB TERMINAL !!</h1>
+    <button class="btn" onclick="
+    setTimeout(double,2000)
+    ">Why Stalking Bro?!! </button>
     <script>
 
         console.log("Method function to multiply 2 no. and create cvariable multiple");
         let multiply = (num1,num2)=> num1*num2 ;
-        
         console.log(multiply(3,4));
 
+
         console.log("Function that run twice");
+        let greet = () => console.log("Hello");
+        let runt = input => {
+            input();
+            input();
+        };
+        (runt(greet));
+        
         
 
         console.log("button if click grow double");
+        function double(){
+            let buttonElement = document.querySelector(".btn");
+            buttonElement.classList.add("js-size");
+        }
+
 
 
         console.log("button if click grow double using event listener");
