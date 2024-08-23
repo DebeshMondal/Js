@@ -25,9 +25,16 @@
 </head>
 <body>
     <h1>OPEB TERMINAL !!</h1>
-    <button class="btn" onclick="
-    setTimeout(double,2000)
-    ">Why Stalking Bro?!! </button>
+
+    <!-- <button class="btn" onclick="
+    setTimeout(double,2000 )
+    ">Why Stalking Bro?!! </button> -->
+
+    
+<button class="btn" 
+">Why Stalking Bro?!! </button>
+
+
     <script>
 
         console.log("Method function to multiply 2 no. and create cvariable multiple");
@@ -54,6 +61,12 @@
 
 
         console.log("button if click grow double using event listener");
+        let buttonElement = document.querySelector(".btn");
+        buttonElement.addEventListener("click",event => {
+            setTimeout(double,3000);
+        });
+
+
 
 
         console.log("Sum of array using for each loop");
@@ -63,6 +76,8 @@
             sum += element;
         });
         console.log(sum);
+
+        
 
         console.log("Sqrs using map method");
         let arr1 = [1,2,3,4,5];
