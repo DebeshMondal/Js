@@ -233,19 +233,21 @@ header {
 }
 
 .items-container {
-
+    width: 80%;
+   margin: 40px 10%;
 }
 
 .item-container{
-
+    width: 200px;
 }
 
 .item-image{
-
+    width: 100%;
 }
 
 .rating{
-
+      font-size: 12px;
+    font-weight: 700;
 }
 
 .company-name{
