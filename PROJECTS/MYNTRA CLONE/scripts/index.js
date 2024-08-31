@@ -10,6 +10,11 @@ let item ={
 
    company_name: 'Carlton London',
    item_name: 'Rhodium-Plated CZ Floral Studs',
+
+   curremt_price: 'Rs 649',
+   original_price: 'Rs 1049',
+   discount: '42'
+
 }
 
 itemsContainerElement.innerHTML = `
@@ -21,9 +26,9 @@ itemsContainerElement.innerHTML = `
                 <div class="company-name">${item.company_name}</div>
                 <div class="item-name">${item.item_name}</div>
                 <div class="price">
-                    <span class="current-price">Rs 649</span>
-                    <span class="original-price">Rs 1049</span>
-                    <span class="discount">(42% OFF)</span>
+                    <span class="current-price">${item.curremt_price}</span>
+                    <span class="original-price">${item.original_price}</span>
+                    <span class="discount">(${item.discount}% OFF)</span>
                 </div>
                 <button class="btn-add-bag">Add to Bag</button>
             </div>`;
