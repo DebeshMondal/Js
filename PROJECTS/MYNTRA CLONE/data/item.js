@@ -8,7 +8,7 @@ const items = [
         current_price: 606,
         discount_percentage: 42,
         return_period: 14,
-        delivery_date: '10 Oct 2023',
+        delivery_date: '10 Oct 2024',
         rating: {
             stars: 4.5,
             count: 1400,
@@ -23,7 +23,7 @@ const items = [
         current_price: 1507,
         discount_percentage: 42,
         return_period: 14,
-        delivery_date: '10 Oct 2023',
+        delivery_date: '11 Oct 2024',
         rating: {
             stars: 4.3,
             count: 24,
