@@ -49,7 +49,7 @@ const items = [
         image: 'images/4.jpg',
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
-        original_price: 999,
+        original_price: 1999,
         current_price: 999,
         discount_percentage: 0,
         return_period: 14,
