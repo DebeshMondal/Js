@@ -53,7 +53,7 @@ const items = [
         current_price: 999,
         discount_percentage: 0,
         return_period: 14,
-        delivery_date: '10 Oct 2023',
+        delivery_date: '19 sept 2024',
         rating: {
             stars: 5.0,
             count: 10,
