@@ -113,7 +113,7 @@ const items = [
         return_period: 14,
         delivery_date: '10 Oct 2023',
         rating: {
-            stars: 4.2,
+            stars: 4.9,
             count: 5200,
         },
     }
