@@ -98,7 +98,7 @@ const items = [
         current_price: 639,
         discount_percentage: 60,
         rating: {
-            stars: 4.2,
+            stars: 4.1,
             count: 388,
         },
     },
