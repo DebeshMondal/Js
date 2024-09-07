@@ -114,7 +114,7 @@ const items = [
         delivery_date: '10 Oct 2024',
         rating: {
             stars: 4.9,
-            count: 5200,
+            count: 5203,
         },
     }
 ];
