@@ -194,7 +194,7 @@ header {
     margin: 50px 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-around;
 }
 
 .sale_item {
@@ -235,11 +235,16 @@ header {
 .items-container {
     width: 80%;
    margin: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item-container{
-    width: 250px;
-    margin: 10px;
+    flex: 1 1 23%;
+    /* width: 250px; */
+    margin: 15px;
+    box-sizing: border-box;
 }
 
 .item-image{
@@ -315,4 +320,21 @@ header {
    border: none;
    border-radius: 10px; 
    cursor:pointer ;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .item-container {
+        flex: 1 1 45%; /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .item-container {
+        flex: 1 1 100%; /* 1 item per row on mobile screens */
+    }
 }
