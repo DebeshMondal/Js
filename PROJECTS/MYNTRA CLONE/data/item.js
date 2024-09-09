@@ -64,7 +64,7 @@ const items = [
         image: 'images/5.jpg',
         company: 'Roadster',
         item_name: 'Pure Cotton T-shirt',
-        original_price: 1399,
+        original_price: 1389,
         current_price: 489,
         discount_percentage: 65,
         return_period: 14,
