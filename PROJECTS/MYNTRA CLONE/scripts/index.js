@@ -1,21 +1,15 @@
-let itemsContainerElement = document.querySelector('.items-container');
+ 
+ let bagItems = [];
+ displayItemHomePage();
+ 
+ function addToBag(itemID){
+    bagItems.push(itemID);
 
-// let item ={
-//    item_image:' images/1.jpg',
+ }
 
-//    rating:{
-//     stars: 4.5,
-//     noof_reviews: 1400,
-//    },
 
-//    company_name: 'Carlton London',
-//    item_name: 'Rhodium-Plated CZ Floral Studs',
-
-//    curremt_price: 'Rs 649',
-//    original_price: 'Rs 1049',
-//    discount: '42'
-
-// }
+ function displayItemHomePage(){
+    let itemsContainerElement = document.querySelector('.items-container');
 
 
 let innerHTML = ' ';
@@ -34,7 +28,7 @@ items.forEach(item=> {
                     <span class="original-price">${item.original_price}</span>
                     <span class="discount">(${item.discount_percentage}% OFF)</span>
                 </div>
-                <button class="btn-add-bag">Add to Bag</button>
+                <button class="btn-add-bag" onclick="addToBag(${item.id})">Add to Bag</button>
             </div>`
 })
 
@@ -44,3 +38,5 @@ items.forEach(item=> {
 
 
 itemsContainerElement.innerHTML = innerHTML ;
+ }
+
