@@ -70,7 +70,7 @@ const items = [
         return_period: 14,
         delivery_date: '10 Oct 2024',
         rating: {
-            stars: 4.2,
+            stars: 3.2,
             count: 3500,
         },
     },
