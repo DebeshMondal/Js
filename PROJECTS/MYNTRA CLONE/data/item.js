@@ -22,7 +22,7 @@ const items = [
         original_price: 2599,
         current_price: 1507,
         discount_percentage: 42,
-        return_period: 14,
+        return_period: 4,
         delivery_date: '11 Oct 2024',
         rating: {
             stars: 4.3,
