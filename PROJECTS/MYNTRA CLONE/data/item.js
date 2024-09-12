@@ -108,7 +108,7 @@ const items = [
         company: 'Nivea',
         item_name: 'Men Fresh Deodrant 150ml',
         original_price: 485,
-        current_price: 282,
+        current_price: 285,
         discount_percentage: 50,
         return_period: 14,
         delivery_date: '10 Oct 2024',
