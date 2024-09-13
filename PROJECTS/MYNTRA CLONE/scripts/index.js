@@ -9,7 +9,12 @@
 
  function dispalyBagIcon(){
     let bagItemCountElement = document.querySelector('.bag-item-count');
-    bagItemCountElement.innerText = bagItems.length;
+    if(bagItems.length > 0) {
+        bagItemCountElement.style.visibility = 'visible';
+        bagItemCountElement.innerText = bagItems.length;
+    }
+    else{
+        bagItemCountElement.style.visibility = 'hidden';
  }
 
 
