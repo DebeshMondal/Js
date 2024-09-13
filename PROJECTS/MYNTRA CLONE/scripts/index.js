@@ -4,7 +4,12 @@
  
  function addToBag(itemID){
     bagItems.push(itemID);
+    dispalyBagIcon();
+ }
 
+ function dispalyBagIcon(){
+    let bagItemCountElement = document.querySelector('.bag-item-count');
+    bagItemCountElement.innerText = bagItems.length;
  }
 
 
