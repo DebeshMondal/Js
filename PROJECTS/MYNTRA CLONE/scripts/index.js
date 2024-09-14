@@ -1,6 +1,12 @@
  
  let bagItems = [];
- displayItemHomePage();
+ onLoad();
+
+ function onLoad(){
+    displayItemHomePage();
+    displayBagIcon();
+ }
+ 
  
  function addToBag(itemID){
     bagItems.push(itemID);
