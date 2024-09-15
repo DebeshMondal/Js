@@ -10,6 +10,7 @@
  
  function addToBag(itemID){
     bagItems.push(itemID);
+    localStorage.setItem('bagItems', JSON.stringify(bagItems));
     displayBagIcon();
  }
 
