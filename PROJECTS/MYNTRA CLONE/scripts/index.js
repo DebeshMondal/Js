@@ -3,7 +3,7 @@
  onLoad();
 
  function onLoad(){
-    let bagItemsStr = localStorage.setItem.getItem('bagItems');
+    let bagItemsStr = localStorage.getItem('bagItems');
     bagItems = bagItemsStr ? JSON.parse(bagItemsStr): [];
     displayItemHomePage();
     displayBagIcon();
