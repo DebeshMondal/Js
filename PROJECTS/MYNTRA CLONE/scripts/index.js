@@ -31,8 +31,8 @@
     let itemsContainerElement = document.querySelector('.items-container');
 
 
-if (itemsContainerElement === undefined){
-    
+if (!itemsContainerElement){
+    return; 
 }   
 let innerHTML = ' ';
 items.forEach(item=> {
