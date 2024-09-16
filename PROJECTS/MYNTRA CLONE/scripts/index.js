@@ -31,6 +31,9 @@
     let itemsContainerElement = document.querySelector('.items-container');
 
 
+if (itemsContainerElement === undefined){
+    
+}   
 let innerHTML = ' ';
 items.forEach(item=> {
     innerHTML+=
