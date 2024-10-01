@@ -99,7 +99,7 @@ const items = [
         discount_percentage: 60,
         rating: {
             stars: 4.1,
-            count: 388,
+            count: 400,
         },
     },
     {
