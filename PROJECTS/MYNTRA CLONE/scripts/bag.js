@@ -1,5 +1,7 @@
 const CONVENIENCE_FEES = 99;
 let bagItemObjects;
+let bagItems = []; // Initialize bagItems if not already defined
+let items = []; // Initialize items if not already defined (populate this with actual item data)
 onLoad();
 
 function onLoad() {
@@ -20,32 +22,31 @@ function displayBagSummary() {
   });
 
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
-  
 
   bagSummaryElement.innerHTML = `
     <div class="bag-details-container">
-    <div class="price-header">PRICE DETAILS (${totalItem} Items) </div>
-    <div class="price-item">
-      <span class="price-item-tag">Total MRP</span>
-      <span class="price-item-value">₹${totalMRP}</span>
+      <div class="price-header">PRICE DETAILS (${totalItem} Items) </div>
+      <div class="price-item">
+        <span class="price-item-tag">Total MRP</span>
+        <span class="price-item-value">₹${totalMRP}</span>
+      </div>
+      <div class="price-item">
+        <span class="price-item-tag">Discount on MRP</span>
+        <span class="price-item-value priceDetail-base-discount">-₹${totalDiscount}</span>
+      </div>
+      <div class="price-item">
+        <span class="price-item-tag">Convenience Fee</span>
+        <span class="price-item-value">₹99</span>
+      </div>
+      <hr>
+      <div class="price-footer">
+        <span class="price-item-tag">Total Amount</span>
+        <span class="price-item-value">₹${finalPayment}</span>
+      </div>
     </div>
-    <div class="price-item">
-      <span class="price-item-tag">Discount on MRP</span>
-      <span class="price-item-value priceDetail-base-discount">-₹${totalDiscount}</span>
-    </div>
-    <div class="price-item">
-      <span class="price-item-tag">Convenience Fee</span>
-      <span class="price-item-value">₹99</span>
-    </div>
-    <hr>
-    <div class="price-footer">
-      <span class="price-item-tag">Total Amount</span>
-      <span class="price-item-value">₹${finalPayment}</span>
-    </div>
-  </div>
-  <button class="btn-place-order">
-    <div class="css-xjhrni">PLACE ORDER</div>
-  </button>
+    <button class="btn-place-order">
+      <div class="css-xjhrni">PLACE ORDER</div>
+    </button>
   `;
 }
 
@@ -57,7 +58,8 @@ function loadBagItemObjects() {
         return items[i];
       }
     }
-  });
+    return null; // Return null if item is not found
+  }).filter(item => item !== null); // Filter out null values
   console.log(bagItemObjects);
 }
 
@@ -74,7 +76,7 @@ function removeFromBag(itemId) {
   bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
   localStorage.setItem('bagItems', JSON.stringify(bagItems));
   loadBagItemObjects();
-  displayBagIcon();
+  displayBagIcon(); // Assuming displayBagIcon() updates bag icon somewhere
   displayBagItems();
   displayBagSummary();
 }
